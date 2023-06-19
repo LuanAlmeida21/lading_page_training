@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <input type="checkbox" aria-label="Close Menu" id="close-menu" class="close-menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu-bar white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#">Logo</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#jobs">Top 3</a></li>
                     <li><a href="#work">Work</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#princing">Princing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -83,7 +86,7 @@
         <div class="main-content jobs-content">
             <h2 class="grid-main-heading">Description about 3 Jobs</h2>
             <p class="grid-main-description">Resume</p>
-            <div class="grid-jobs-three">
+            <div class="grid">
                 <article>
                     <h3>One</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing 
@@ -110,6 +113,32 @@
                 </article>
             </div>
         </div>
+    </section>
+    <section id="gallery" class="grid-jobs white-bg section">
+        <div class="main-content jobs-content">
+            <h2 class="grid-main-heading">Description about 3 Jobs</h2>
+            <p class="grid-main-description">Resume</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image 360x360">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=2" alt="random image 360x360">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=3" alt="random image 360x360">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=4" alt="random image 360x360">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=5" alt="random image 360x360">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image 360x360">
+                </div>
+            </div>
+        </div>    
     </section>
     <section id="princing" class="white-bg section">
         <div class="main-content topjobs-content">
