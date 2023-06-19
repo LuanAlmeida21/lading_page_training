@@ -339,6 +339,13 @@ div.full-width {
     display: none;
 }
 
+.back-to-top img{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+}
+
 @media (max-width: 800px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
